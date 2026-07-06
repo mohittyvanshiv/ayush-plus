@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AyushPlus International — Private Medical Care in India</title>
+<meta name="description" content="AyushPlus International arranges world-class medical treatment in India for international patients — private consultations, JCI-accredited hospitals, and end-to-end concierge care.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0d1f2d;
+  --navy-2:#13293b;
+  --gold:#c9a24b;
+  --gold-light:#e3c887;
+  --ivory:#faf7f0;
+  --ivory-2:#f2ecdf;
+  --text:#2b3a46;
+  --muted:#6b7a86;
+  --white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:var(--text);background:var(--ivory);line-height:1.7;font-weight:300}
+h1,h2,h3{font-family:'Cormorant Garamond',serif;color:var(--navy);font-weight:600;line-height:1.2}
+.container{max-width:1140px;margin:0 auto;padding:0 24px}
+section{padding:96px 0}
+.eyebrow{display:inline-block;letter-spacing:.28em;text-transform:uppercase;font-size:.72rem;font-weight:500;color:var(--gold);margin-bottom:16px}
+.section-title{font-size:2.6rem;margin-bottom:18px}
+.section-intro{max-width:640px;color:var(--muted);font-size:1.05rem}
+.btn{display:inline-block;padding:16px 38px;font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;font-weight:500;text-decoration:none;transition:all .3s ease;cursor:pointer;border:none}
+.btn-gold{background:var(--gold);color:var(--navy)}
+.btn-gold:hover{background:var(--gold-light)}
+.btn-outline{border:1px solid rgba(255,255,255,.45);color:var(--white);margin-left:14px}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold-light)}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(13,31,45,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(201,162,75,.25)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:18px 24px;max-width:1240px;margin:0 auto}
+.logo{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--white);text-decoration:none;font-weight:600;letter-spacing:.02em}
+.logo span{color:var(--gold)}
+.nav-links{display:flex;gap:34px;list-style:none}
+.nav-links a{color:rgba(255,255,255,.82);text-decoration:none;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;transition:color .3s}
+.nav-links a:hover{color:var(--gold-light)}
+.nav-cta{background:var(--gold);color:var(--navy)!important;padding:10px 22px}
+@media(max-width:880px){.nav-links li:not(:last-child){display:none}}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;align-items:center;background:linear-gradient(160deg,var(--navy) 0%,var(--navy-2) 55%,#1b3a50 100%);position:relative;overflow:hidden;padding:140px 0 80px}
+.hero::after{content:'';position:absolute;right:-180px;top:-180px;width:640px;height:640px;border-radius:50%;border:1px solid rgba(201,162,75,.22)}
+.hero::before{content:'';position:absolute;right:-80px;top:-80px;width:440px;height:440px;border-radius:50%;border:1px solid rgba(201,162,75,.14)}
+.hero h1{color:var(--white);font-size:3.8rem;max-width:760px;margin-bottom:26px}
+.hero h1 em{color:var(--gold-light);font-style:italic}
+.hero p{color:rgba(255,255,255,.75);max-width:560px;font-size:1.12rem;margin-bottom:42px}
+.hero-note{margin-top:56px;display:flex;gap:48px;flex-wrap:wrap}
+.hero-note div{border-left:1px solid rgba(201,162,75,.4);padding-left:18px}
+.hero-note strong{display:block;color:var(--gold-light);font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:600}
+.hero-note span{color:rgba(255,255,255,.6);font-size:.82rem;letter-spacing:.06em;text-transform:uppercase}
+@media(max-width:680px){.hero h1{font-size:2.5rem}}
+
+/* TRUST BAR */
+.trust{background:var(--navy-2);padding:26px 0;border-top:1px solid rgba(201,162,75,.2)}
+.trust .container{display:flex;justify-content:space-between;flex-wrap:wrap;gap:18px}
+.trust p{color:rgba(255,255,255,.55);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase}
+
+/* WHY INDIA */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+@media(max-width:880px){.split{grid-template-columns:1fr}}
+.why-points{margin-top:34px;display:grid;gap:22px}
+.why-point{display:flex;gap:18px}
+.why-point .marker{flex-shrink:0;width:44px;height:44px;border:1px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;color:var(--gold);font-size:1.15rem;font-weight:600}
+.why-point h3{font-size:1.25rem;margin-bottom:4px}
+.why-point p{color:var(--muted);font-size:.95rem}
+.why-visual{background:var(--navy);padding:56px 48px;position:relative}
+.why-visual::after{content:'';position:absolute;inset:14px;border:1px solid rgba(201,162,75,.35);pointer-events:none}
+.why-visual h3{color:var(--gold-light);font-size:1.9rem;margin-bottom:20px}
+.why-visual p{color:rgba(255,255,255,.72);font-size:.98rem;margin-bottom:16px}
+
+/* SPECIALTIES */
+.specialties{background:var(--white)}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:56px}
+@media(max-width:880px){.grid-3{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.grid-3{grid-template-columns:1fr}}
+.card{background:var(--ivory);padding:38px 32px;border-top:2px solid var(--gold);transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(13,31,45,.1)}
+.card .icon{font-size:1.6rem;margin-bottom:18px;display:block}
+.card h3{font-size:1.35rem;margin-bottom:10px}
+.card p{color:var(--muted);font-size:.92rem}
+
+/* JOURNEY */
+.journey{background:var(--navy)}
+.journey .eyebrow{color:var(--gold-light)}
+.journey .section-title,.journey .step h3{color:var(--white)}
+.journey .section-intro{color:rgba(255,255,255,.65)}
+.steps{margin-top:64px;display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+@media(max-width:880px){.steps{grid-template-columns:1fr;gap:32px}}
+.step{padding:0 18px;border-left:1px solid rgba(201,162,75,.35)}
+.step .num{font-family:'Cormorant Garamond',serif;font-size:2.4rem;color:var(--gold);font-weight:600;display:block;margin-bottom:12px}
+.step h3{font-size:1.12rem;margin-bottom:8px}
+.step p{color:rgba(255,255,255,.6);font-size:.86rem}
+
+/* TESTIMONIALS */
+.testimonials{background:var(--ivory-2)}
+.quote-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:56px}
+@media(max-width:880px){.quote-grid{grid-template-columns:1fr}}
+.quote{background:var(--white);padding:40px 34px;position:relative}
+.quote::before{content:'“';font-family:'Cormorant Garamond',serif;font-size:4.5rem;color:var(--gold);position:absolute;top:6px;left:24px;line-height:1}
+.quote p{font-style:italic;color:var(--text);margin:34px 0 24px;font-size:.98rem}
+.quote cite{font-style:normal;color:var(--muted);font-size:.85rem;letter-spacing:.06em}
+.quote cite strong{color:var(--navy);display:block;font-size:.92rem;letter-spacing:.02em}
+
+/* FAQ */
+.faq-item{border-bottom:1px solid rgba(13,31,45,.12);padding:26px 0;cursor:pointer}
+.faq-item h3{font-size:1.3rem;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.faq-item h3::after{content:'+';color:var(--gold);font-size:1.6rem;font-family:'Inter';font-weight:300;transition:transform .3s}
+.faq-item.open h3::after{transform:rotate(45deg)}
+.faq-item p{max-height:0;overflow:hidden;color:var(--muted);transition:max-height .4s ease,padding .3s;font-size:.96rem}
+.faq-item.open p{max-height:220px;padding-top:14px}
+
+/* CONTACT */
+.contact{background:var(--navy)}
+.contact .eyebrow{color:var(--gold-light)}
+.contact .section-title{color:var(--white)}
+.contact .section-intro{color:rgba(255,255,255,.65)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:48px;max-width:760px}
+@media(max-width:680px){.form-grid{grid-template-columns:1fr}}
+.form-grid .full{grid-column:1/-1}
+label{display:block;color:rgba(255,255,255,.7);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:8px}
+input,select,textarea{width:100%;padding:15px 16px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.2);color:var(--white);font-family:'Inter';font-size:.95rem;font-weight:300}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold)}
+select option{color:var(--navy)}
+.privacy-note{color:rgba(255,255,255,.45);font-size:.8rem;margin-top:18px;max-width:640px}
+
+/* FOOTER */
+footer{background:#0a1823;padding:56px 0 32px}
+.footer-grid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:40px}
+footer .logo{font-size:1.3rem}
+footer p,footer a{color:rgba(255,255,255,.5);font-size:.85rem;text-decoration:none}
+footer a:hover{color:var(--gold-light)}
+.footer-col h4{color:var(--white);font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:14px;font-weight:500}
+.footer-col ul{list-style:none}
+.footer-col li{margin-bottom:8px}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.08);margin-top:44px;padding-top:24px;text-align:center}
+.footer-bottom p{font-size:.78rem}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="logo" href="#top">Ayush<span>Plus</span> International</a>
+    <ul class="nav-links">
+      <li><a href="#why">Why India</a></li>
+      <li><a href="#specialties">Specialties</a></li>
+      <li><a href="#journey">Your Journey</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a class="nav-cta" href="#contact">Private Consultation</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="container">
+    <span class="eyebrow">Medical Travel · Concierge Care · India</span>
+    <h1>World-class medicine, <em>arranged entirely around you.</em></h1>
+    <p>AyushPlus International connects discerning patients from around the world with India's finest hospitals and surgeons — with one private point of contact managing everything from first opinion to full recovery.</p>
+    <a class="btn btn-gold" href="#contact">Request a Private Consultation</a>
+    <a class="btn btn-outline" href="#journey">How It Works</a>
+    <div class="hero-note">
+      <div><strong>JCI &amp; NABH</strong><span>Accredited partner hospitals</span></div>
+      <div><strong>48 hrs</strong><span>Treatment plan &amp; estimate</span></div>
+      <div><strong>End-to-end</strong><span>Visa, travel, stay &amp; aftercare</span></div>
+    </div>
+  </div>
+</header>
+
+<div class="trust">
+  <div class="container">
+    <p>Cardiac Sciences</p><p>Oncology</p><p>Orthopedics</p><p>Neurosurgery</p><p>Fertility</p><p>Cosmetic &amp; Dental</p><p>Ayurveda Wellness</p>
+  </div>
+</div>
+
+<section id="why">
+  <div class="container split">
+    <div>
+      <span class="eyebrow">Why India</span>
+      <h2 class="section-title">The world's surgeons. A fraction of the wait.</h2>
+      <div class="why-points">
+        <div class="why-point"><div class="marker">I</div><div><h3>Internationally trained specialists</h3><p>Surgeons with credentials and fellowships from leading institutions in the US, UK, and Europe — performing high volumes of complex procedures every year.</p></div></div>
+        <div class="why-point"><div class="marker">II</div><div><h3>No waiting lists</h3><p>Consultations within days and surgery scheduled on your calendar — not months on a queue.</p></div></div>
+        <div class="why-point"><div class="marker">III</div><div><h3>Exceptional value</h3><p>Premium private care — international-standard suites, dedicated nursing, advanced technology — at costs well below Western private hospitals.</p></div></div>
+        <div class="why-point"><div class="marker">IV</div><div><h3>Discretion as standard</h3><p>Private admissions, confidential records handling, and interpreters bound by strict confidentiality.</p></div></div>
+      </div>
+    </div>
+    <div class="why-visual">
+      <h3>One relationship. Every detail handled.</h3>
+      <p>Your personal care manager coordinates medical opinions, hospital admission, travel, five-star accommodation for your family, and follow-up after you return home.</p>
+      <p>You focus on getting well. We manage the rest.</p>
+    </div>
+  </div>
+</section>
+
+<section class="specialties" id="specialties">
+  <div class="container">
+    <span class="eyebrow">Centres of Excellence</span>
+    <h2 class="section-title">Full-spectrum care</h2>
+    <p class="section-intro">We partner exclusively with accredited hospitals recognised for outcomes in these specialties.</p>
+    <div class="grid-3">
+      <div class="card"><span class="icon">🫀</span><h3>Cardiac Sciences</h3><p>Bypass surgery, valve repair and replacement, angioplasty, and minimally invasive and robotic cardiac procedures.</p></div>
+      <div class="card"><span class="icon">🎗️</span><h3>Oncology</h3><p>Comprehensive cancer care — precision diagnostics, surgical oncology, radiation therapy, chemotherapy, and immunotherapy.</p></div>
+      <div class="card"><span class="icon">🦴</span><h3>Orthopedics</h3><p>Joint replacement (hip, knee, shoulder), spine surgery, and sports medicine with rapid-recovery protocols.</p></div>
+      <div class="card"><span class="icon">🧠</span><h3>Neurosciences</h3><p>Brain and spine surgery, stroke intervention, and treatment for complex neurological conditions.</p></div>
+      <div class="card"><span class="icon">🌸</span><h3>Fertility &amp; IVF</h3><p>Advanced reproductive medicine with private, confidential care pathways for couples.</p></div>
+      <div class="card"><span class="icon">✨</span><h3>Cosmetic &amp; Dental</h3><p>Aesthetic surgery, hair restoration, and full-mouth dental rehabilitation by leading specialists.</p></div>
+      <div class="card"><span class="icon">🌿</span><h3>Ayurveda &amp; Wellness</h3><p>Physician-supervised recovery, rejuvenation, and preventive wellness programmes at premier retreats.</p></div>
+      <div class="card"><span class="icon">🔬</span><h3>Executive Health Checks</h3><p>Comprehensive full-body diagnostics completed in a single day, reviewed by senior consultants.</p></div>
+      <div class="card"><span class="icon">🏥</span><h3>Organ Transplant</h3><p>Liver, kidney, and bone-marrow transplant programmes at India's highest-volume, legally compliant centres.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="journey" id="journey">
+  <div class="container">
+    <span class="eyebrow">The AyushPlus Journey</span>
+    <h2 class="section-title">From first call to full recovery</h2>
+    <p class="section-intro">A single dedicated care manager guides you through all five stages.</p>
+    <div class="steps">
+      <div class="step"><span class="num">01</span><h3>Consult</h3><p>Share your reports confidentially. Receive specialist opinions and a detailed treatment plan with a transparent estimate within 48 hours.</p></div>
+      <div class="step"><span class="num">02</span><h3>Plan</h3><p>We arrange your medical visa, flights, airport transfer, and accommodation for you and your family.</p></div>
+      <div class="step"><span class="num">03</span><h3>Arrive</h3><p>Personal reception at the airport, private transfer, and direct admission — no queues, no paperwork.</p></div>
+      <div class="step"><span class="num">04</span><h3>Treatment</h3><p>Care in international patient suites with dedicated nursing, interpreters, and daily updates for your family.</p></div>
+      <div class="step"><span class="num">05</span><h3>Recover</h3><p>Supervised recuperation — in-city or at a wellness retreat — then structured tele-follow-up after you return home.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <div class="container">
+    <span class="eyebrow">Patient Stories</span>
+    <h2 class="section-title">Trusted across continents</h2>
+    <div class="quote-grid">
+      <div class="quote"><p>After two years on a waiting list at home, my bypass surgery was done within three weeks of my first call. The care manager handled everything — I only had to arrive.</p><cite><strong>A. O.</strong>Lagos, Nigeria — Cardiac Surgery</cite></div>
+      <div class="quote"><p>The oncology team's second opinion changed my entire treatment plan. My family stayed beside me throughout, and the hospital felt like a five-star hotel.</p><cite><strong>S. K.</strong>Tashkent, Uzbekistan — Oncology</cite></div>
+      <div class="quote"><p>Total discretion, from the airport to the ward. Not a single detail was left for us to worry about. My mother's knee replacements changed her life.</p><cite><strong>M. A.</strong>Muscat, Oman — Orthopedics</cite></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="container">
+    <span class="eyebrow">Questions</span>
+    <h2 class="section-title">Frequently asked</h2>
+    <div class="faq-item"><h3>How quickly can treatment begin?</h3><p>Once we receive your medical reports, you'll have specialist opinions and a treatment plan within 48 hours. Most patients travel within one to three weeks, depending on visa processing and medical urgency.</p></div>
+    <div class="faq-item"><h3>How do costs compare with private care at home?</h3><p>Every patient receives a transparent, itemised estimate before travelling — covering treatment, hospital stay, and our concierge services. Costs at India's premium private hospitals are typically a fraction of equivalent private care in the US, UK, or Gulf, with no compromise on technology or expertise.</p></div>
+    <div class="faq-item"><h3>What about language and communication?</h3><p>Dedicated interpreters are available for Arabic, French, Russian, Swahili, Bangla, and other languages, and your care manager communicates with your family in your preferred language throughout.</p></div>
+    <div class="faq-item"><h3>Can my family travel with me?</h3><p>Yes — we arrange visas, accommodation, and local support for accompanying family members, including extended stays during recovery.</p></div>
+    <div class="faq-item"><h3>What happens after I return home?</h3><p>Your care manager schedules tele-consultations with your treating specialist, coordinates with your local physician, and remains your point of contact for any concern during recovery.</p></div>
+    <div class="faq-item"><h3>Is my medical information kept confidential?</h3><p>Absolutely. Records are shared only with the treating medical team, and all staff and interpreters operate under strict confidentiality agreements.</p></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+    <span class="eyebrow">Begin Privately</span>
+    <h2 class="section-title">Request a private consultation</h2>
+    <p class="section-intro">Share a few details and a senior care manager will contact you within 24 hours. No obligation, complete confidentiality.</p>
+    <form class="form-grid" onsubmit="handleSubmit(event)">
+      <div><label for="name">Full name</label><input id="name" type="text" required></div>
+      <div><label for="country">Country of residence</label><input id="country" type="text" required></div>
+      <div><label for="email">Email</label><input id="email" type="email" required></div>
+      <div><label for="phone">Phone / WhatsApp</label><input id="phone" type="tel" required></div>
+      <div class="full"><label for="specialty">Area of treatment</label>
+        <select id="specialty">
+          <option>Cardiac Sciences</option><option>Oncology</option><option>Orthopedics</option><option>Neurosciences</option><option>Fertility &amp; IVF</option><option>Cosmetic &amp; Dental</option><option>Organ Transplant</option><option>Ayurveda &amp; Wellness</option><option>Executive Health Check</option><option>Other / Not sure</option>
+        </select>
+      </div>
+      <div class="full"><label for="message">Tell us briefly about your medical need</label><textarea id="message" rows="4"></textarea></div>
+      <div class="full"><button class="btn btn-gold" type="submit">Submit Confidentially</button></div>
+    </form>
+    <p class="privacy-note">Your information is used solely to prepare your consultation and is never shared without your consent.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col" style="max-width:300px">
+        <a class="logo" href="#top">Ayush<span>Plus</span> International</a>
+        <p style="margin-top:14px">Private medical travel to India's finest hospitals — planned, managed, and cared for, end to end.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul><li><a href="#why">Why India</a></li><li><a href="#specialties">Specialties</a></li><li><a href="#journey">Your Journey</a></li><li><a href="#faq">FAQ</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul><li><a href="mailto:care@ayushplus.com">care@ayushplus.com</a></li><li><a href="#">WhatsApp: +91 XXXXX XXXXX</a></li><li><p>New Delhi · Mumbai · Chennai</p></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 AyushPlus International. All rights reserved. AyushPlus is a care-facilitation service; all medical treatment is provided by licensed, accredited partner hospitals.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.faq-item').forEach(function(item){
+  item.addEventListener('click',function(){ item.classList.toggle('open'); });
+});
+function handleSubmit(e){
+  e.preventDefault();
+  var btn = e.target.querySelector('button');
+  btn.textContent = 'Thank you — we will contact you within 24 hours';
+  btn.disabled = true;
+}
+</script>
+</body>
+</html>
